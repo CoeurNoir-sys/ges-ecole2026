@@ -37,7 +37,10 @@ public class SecurityConfig {
                                 "/v3/api-docs",
                                 "/v3/api-docs/**",
                                 "/v3/api-docs.yaml",
-                                "/h2-console/**"
+                                "/h2-console/**",
+                                "/actuator/health",
+                                "/actuator/health/**",
+                                "/api/version"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
